@@ -1,0 +1,7 @@
+# TECHNOLOGY STACK
+
+![](NEXUSIA.png)
+
+## CLIENT SIDE
+
+## SERVER SIDE
