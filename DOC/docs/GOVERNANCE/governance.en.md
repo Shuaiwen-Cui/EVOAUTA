@@ -2,7 +2,7 @@
 
 ## STRUCTURE
 
-Evoaxis (Shenzhen) Technology Co., Ltd.
+Evoauta (Shenzhen) Technology Co., Ltd.
 
 ## ORGANIZATION
 
