@@ -1,24 +1,41 @@
-# Copyright (c) 2025 - now Shuaiwen Cui
-# Built upon MkDocs & Material for MkDocs
+# ==============================================================
+#  EVOAUTA Documentation Configuration
+#  Author: Shuaiwen Cui
+#  Built upon: MkDocs + Material for MkDocs
+#  Date: 2025
+# ==============================================================
 
-# Project information
+# -----------------------------
+#  Project Information
+# -----------------------------
 site_name: EVOAUTA
-site_url: https://localhost:9000/ # build and run on server, to visit it, type in the server's IP address and port number like this: xxx.xxx.xxx.xxx:7000
+site_url: https://localhost:9000/  # Change to your real domain when deploying
 site_author: Shuaiwen Cui
 site_description: >-
-  
-# Repository
+  Documentation site for EVOAUTA — Evolutionary Autonomous Intelligence Framework.
+
+# -----------------------------
+#  Repository
+# -----------------------------
 repo_name: Shuaiwen-Cui/EVOAUTA
 repo_url: https://github.com/Shuaiwen-Cui/EVOAUTA.git
 
-# Copyright
-copyright: Copyright &copy; 2025 ~ now | 🚀 Shuaiwen Cui (Shaun)
+# -----------------------------
+#  Copyright
+# -----------------------------
+copyright: >
+  Copyright © 2025 ~ now | 🚀 Shuaiwen Cui (Shaun)
 
-# Configuration
+# -----------------------------
+#  Theme Configuration
+# -----------------------------
 theme:
   name: material
   language: en
   logo: static/images/logo-white.png
+  favicon: static/images/logo-black.png
+
+  # ---------- Features ----------
   features:
     - announce.dismiss
     - content.action.edit
@@ -26,27 +43,23 @@ theme:
     - content.code.annotate
     - content.code.copy
     - content.code.select
-    # - content.tabs.link
     - content.tooltips
     - header.autohide
-    # - navigation.expand # expand the side navigation bar by default
     - navigation.footer
-    - navigation.indexes # documents can be directly attached to sections, which is particularly useful for providing overview pages
-    # - navigation.instant
-    - navigation.instant.prefetch # for large file
-    - navigation.instant.progress # loading progress bar
-    - navigation.path # breadcrumb path on top of page
-    # - navigation.prune # only build the visible part of the navigation tree
-    # - navigation.sections # navigation - top level will render as sections
+    - navigation.indexes
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.path
     - navigation.tabs
-    - navigation.tabs.sticky # tabs stick to the top of the page
+    - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
     - toc.follow
-    # - toc.integrate # toc is merged into the left navigation bar
+
+  # ---------- Color Scheme ----------
   palette:
     - media: "(prefers-color-scheme)"
       scheme: slate
@@ -69,10 +82,13 @@ theme:
       toggle:
         icon: material/toggle-switch-off
         name: Switch to system preference
+
+  # ---------- Fonts ----------
   font:
     text: Roboto
     code: Roboto Mono
-  favicon: static/images/logo-black.png
+
+  # ---------- Icons ----------
   icon:
     logo: logo
     previous: fontawesome/solid/angle-left
@@ -82,25 +98,25 @@ theme:
       hardware-tag: fontawesome/solid/microchip
       software-tag: fontawesome/solid/laptop-code
 
-# Plugins
+# -----------------------------
+#  Plugins
+# -----------------------------
 plugins:
   - tags
   - blog
   - rss:
-      match_path: blog/posts/.* 
+      match_path: blog/posts/.*
       date_from_meta:
-        as_creation: date
+        default_time: "00:00"    # Must be a string, not a datetime
       categories:
         - categories
-        - tags 
-  # - social
+        - tags
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - minify:
       minify_html: true
-  # - privacy
   - i18n:
-      docs_structure: suffix
+      docs_structure: suffix           # Use filename suffix like index.en.md / index.zh.md
       fallback_to_default: true
       reconfigure_material: true
       reconfigure_search: true
@@ -109,54 +125,61 @@ plugins:
           default: true
           name: English
           build: true
-          # site_name: Infinity
         - locale: zh
           name: 简体中文
           build: true
-          nav_translations: # note that all titles and subtitles in the navigation bar that need to be translated can be put here, but with no indentation
+          nav_translations:            # Translation of navigation titles
+            Home: 首页
             ABOUT: 关于
             GOVERNANCE: 治理
             TECHNOLOGIES: 技术
             PRODUCTS: 产品
             APPLICATIONS: 应用
+            BLOG: 博客
 
+# -----------------------------
+#  Navigation Structure
+# -----------------------------
+nav:
+  - ABOUT: ABOUT/about.md
+  - GOVERNANCE: GOVERNANCE/governance.md
+  - TECHNOLOGIES: TECHNOLOGIES/technologies.md
+  - PRODUCTS: PRODUCTS/products.md
+  - APPLICATIONS: APPLICATIONS/applications.md
 
-# # Hooks
-# hooks:
-#   - material/overrides/hooks/shortcodes.py
-#   - material/overrides/hooks/translations.py 
-
-# Additional configuration 
+# -----------------------------
+#  Extra Configuration
+# -----------------------------
 extra:
   generator: false
+
+  # Status labels for pages (optional)
   status:
     new: Recently added
     deprecated: Deprecated
+
+  # Google Analytics integration (optional)
   analytics:
     provider: google
-    property: !ENV GOOGLE_ANALYTICS_KEY
-    # property: GOOGLE_ANALYTICS_KEY
-    feedback:
-      title: Was this page helpful?
-      ratings:
-        - icon: material/thumb-up-outline
-          name: This page was helpful
-          data: 1
-          note: >-
-            Thanks for your feedback!
-        - icon: material/thumb-down-outline
-          name: This page could be improved
-          data: 0
-          note: >- 
-            Thanks for your feedback! Help us improve this page by
-            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
-  # alternate:
-  #   - name: English
-  #     link: /en/ 
-  #     lang: en
-  #   - name: Chinese
-  #     link: /zh/
-  #     lang: zh
+    property: !ENV GOOGLE_ANALYTICS_KEY  # Set your GA key via environment variable
+
+  # Feedback widget shown at the bottom of each page
+  feedback:
+    title: Was this page helpful?
+    ratings:
+      - icon: material/thumb-up-outline
+        name: This page was helpful
+        data: 1
+        note: >
+          Thanks for your feedback!
+      - icon: material/thumb-down-outline
+        name: This page could be improved
+        data: 0
+        note: >
+          Thanks for your feedback! Help us improve this page by
+          using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+
+  # Social media links displayed in the footer
   social:
     - icon: fontawesome/solid/house
       link: http://www.cuishuaiwen.com/
@@ -170,30 +193,23 @@ extra:
       link: https://orcid.org/0000-0003-4447-6687
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/ShuaiwenC
+
+  # Custom tag icons
   tags:
     Default: default-tag
     Hardware: hardware-tag
     Software: software-tag
-  # consent:
-  #   title: Cookie consent
-  #   description: >- 
-  #     We use cookies to recognize your repeated visits and preferences, as well
-  #     as to measure the effectiveness of our documentation and whether users
-  #     find what they're searching for. With your consent, you're helping us to
-  #     make our documentation better.
 
-# Extra Configuration 
+# -----------------------------
+#  JavaScript and Math Support
+# -----------------------------
 extra_javascript:
-  # - https://giscus.app/client.js
-  # - javascripts/katex.js 
-  # - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
-  # - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
-  # - javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-  # - javascripts/embed-pdf.js
 
-# Extensions
+# -----------------------------
+#  Markdown Extensions
+# -----------------------------
 markdown_extensions:
   - abbr
   - admonition
@@ -209,15 +225,9 @@ markdown_extensions:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.details
-  # - pymdownx.emoji:
-  #     emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  #     emoji_index: !!python/name:material.extensions.emoji.twemoji
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-
-
-
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -248,25 +258,3 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
-
-# Page Navigation Tree
-nav:
-  - ABOUT: "ABOUT/about.md"
-  - GOVERNANCE: "GOVERNANCE/governance.md"
-  - TECHNOLOGIES: "TECHNOLOGIES/technologies.md"
-  - PRODUCTS: "PRODUCTS/products.md"
-  - APPLICATIONS: "APPLICATIONS/applications.md"
-
-    
-# if there are sub nodes under a node, then there should not be a link right after the node. All the stuff should be placed under the node.
-
-# example
-
-# [incorrect use]
-# - CLOUD: "./CLOUD/cloud.md"
-#     - CLOUD-TECH: "./CLOUD/CLOUD-TECH/cloud-tech.md"
-
-# [correct use]
-# - CLOUD: 
-#     - "./CLOUD/cloud.md"
-#     - CLOUD-TECH: "./CLOUD/CLOUD-TECH/cloud-tech.md"
