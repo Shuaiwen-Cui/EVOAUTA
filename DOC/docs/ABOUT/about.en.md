@@ -10,7 +10,7 @@ Individual Users
 
 ## BUSINESS GOAL
 
-Digitalization, Automation, Intelligence.
+Individual Space Digitalization, Automation, Intelligence
 
 ## FOCUS AREAS
 
