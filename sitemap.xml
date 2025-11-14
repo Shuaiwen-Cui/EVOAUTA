@@ -2,98 +2,98 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://localhost:9000/</loc>
-        <lastmod>2025-11-12</lastmod>
+        <lastmod>2025-11-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://localhost:9000/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://localhost:9000/zh/"/>
     </url>
     <url>
         <loc>https://localhost:9000/ABOUT/about/</loc>
-        <lastmod>2025-11-12</lastmod>
+        <lastmod>2025-11-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://localhost:9000/ABOUT/about/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://localhost:9000/zh/ABOUT/about/"/>
     </url>
     <url>
         <loc>https://localhost:9000/APPLICATIONS/applications/</loc>
-        <lastmod>2025-11-12</lastmod>
+        <lastmod>2025-11-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://localhost:9000/APPLICATIONS/applications/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://localhost:9000/zh/APPLICATIONS/applications/"/>
     </url>
     <url>
         <loc>https://localhost:9000/GOVERNANCE/governance/</loc>
-        <lastmod>2025-11-12</lastmod>
+        <lastmod>2025-11-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://localhost:9000/GOVERNANCE/governance/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://localhost:9000/zh/GOVERNANCE/governance/"/>
     </url>
     <url>
         <loc>https://localhost:9000/PRODUCTS/products/</loc>
-        <lastmod>2025-11-12</lastmod>
+        <lastmod>2025-11-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://localhost:9000/PRODUCTS/products/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://localhost:9000/zh/PRODUCTS/products/"/>
     </url>
     <url>
         <loc>https://localhost:9000/TECHNOLOGIES/technologies/</loc>
-        <lastmod>2025-11-12</lastmod>
+        <lastmod>2025-11-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://localhost:9000/TECHNOLOGIES/technologies/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://localhost:9000/zh/TECHNOLOGIES/technologies/"/>
     </url>
     <url>
         <loc>https://localhost:9000/blog/</loc>
-        <lastmod>2025-11-12</lastmod>
+        <lastmod>2025-11-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://localhost:9000/blog/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://localhost:9000/zh/blog/"/>
     </url>
     <url>
         <loc>https://localhost:9000/zh/</loc>
-        <lastmod>2025-11-12</lastmod>
+        <lastmod>2025-11-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://localhost:9000/zh/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://localhost:9000/"/>
     </url>
     <url>
         <loc>https://localhost:9000/zh/ABOUT/about/</loc>
-        <lastmod>2025-11-12</lastmod>
+        <lastmod>2025-11-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://localhost:9000/zh/ABOUT/about/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://localhost:9000/ABOUT/about/"/>
     </url>
     <url>
         <loc>https://localhost:9000/zh/APPLICATIONS/applications/</loc>
-        <lastmod>2025-11-12</lastmod>
+        <lastmod>2025-11-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://localhost:9000/zh/APPLICATIONS/applications/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://localhost:9000/APPLICATIONS/applications/"/>
     </url>
     <url>
         <loc>https://localhost:9000/zh/GOVERNANCE/governance/</loc>
-        <lastmod>2025-11-12</lastmod>
+        <lastmod>2025-11-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://localhost:9000/zh/GOVERNANCE/governance/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://localhost:9000/GOVERNANCE/governance/"/>
     </url>
     <url>
         <loc>https://localhost:9000/zh/PRODUCTS/products/</loc>
-        <lastmod>2025-11-12</lastmod>
+        <lastmod>2025-11-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://localhost:9000/zh/PRODUCTS/products/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://localhost:9000/PRODUCTS/products/"/>
     </url>
     <url>
         <loc>https://localhost:9000/zh/TECHNOLOGIES/technologies/</loc>
-        <lastmod>2025-11-12</lastmod>
+        <lastmod>2025-11-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://localhost:9000/zh/TECHNOLOGIES/technologies/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://localhost:9000/TECHNOLOGIES/technologies/"/>
     </url>
     <url>
         <loc>https://localhost:9000/zh/blog/</loc>
-        <lastmod>2025-11-12</lastmod>
+        <lastmod>2025-11-14</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="zh" href="https://localhost:9000/zh/blog/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://localhost:9000/blog/"/>
